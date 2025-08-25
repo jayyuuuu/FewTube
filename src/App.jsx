@@ -1,11 +1,16 @@
 
 import './App.css'
+import Body from './components/Body'
+import Head from './components/Head'
 
 function App() {
 
   return (
   
-      <h1 className='font-bold text-center text-4xl m-4 p-2'>Helloo React</h1>
+      <div>
+      <Head />
+      <Body />
+      </div>
 
   )
 }
