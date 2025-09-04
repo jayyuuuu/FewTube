@@ -45,14 +45,15 @@ FewTube is a video streaming application inspired by YouTube. It allows users to
 # More from Code(Extra) 
 
 ## APP STRUCTURE: 
-🌟Header
-🌟Body
-    🌟SideBar
-        🌟MenuItems
-    🌟MainContainer
-        🌟Buttons List
-        🌟VideoContainer
-               🌟VideoCard
+
+    -🌟Header
+    -🌟Body
+        -🌟SideBar
+               -🌟MenuItems
+        -🌟MainContainer
+               -🌟Buttons List
+               -🌟VideoContainer
+                       -🌟VideoCard
 
 ### Debouncing
 Typing fast -> difference b/w 2 key strokes is less (let 30 ms)
@@ -63,11 +64,8 @@ iphone pro max = 14 letter * 1000 people making API calls = 14000 API calls
 with debouncing = 3 API calls * 1000 = 3000 API CALLS
 
 Debouncing is applied with 200ms
-
 if difference between 2 key strokes is < 200ms -> decline the API CALL.
 For debouncing used in Google/ youtube the time is
-
-/*
 
 KEY - i
 render the component
@@ -102,6 +100,7 @@ Two ways to handle LIVE data -> Using Web Sockets - 2 way connection that create
 In an application like GMail, API polling can be used as e dont need very real time data . Its okay if the reciver gets the mail after 10 seconds. Eg: Crickbuzz - API polling happens in "25 seconds".
 
 If there is application like stock market apps, Here we need very real time data. Eg: Live chat applications need real time data.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
